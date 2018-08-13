@@ -1,0 +1,46 @@
+body{
+}
+
+.lenticular{
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+canvas{
+  display: none;
+}
+
+.mixing_img{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: 100%;
+  background-position: -180px 0px;
+  -webkit-mask-repeat-x: initial;
+  -webkit-mask-repeat-y: initial;
+}
+
+.lenticular #p{
+  background-image: url(../img/f.jpeg);
+  background-size:cover;
+  width: 100%;
+}
+
+.lenticular #t{
+  background-image: url(../img/a.jpeg);
+  background-size:cover;
+  width: 100%;
+}
+
+ .lenticular #p #text{
+  font-size: 4em;
+  font-style: italic;
+  color: #fff;
+  margin-left: 0;
+  height: fit-content;
+}
